@@ -12,3 +12,4 @@ class Save:
                 parts = sen.split()
                 data = f"{parts[0]},{parts[1]},{parts[2]}"
                 file.write(f"{data}\n")
+        return f"{self.save_path}{self.file_name}.csv"

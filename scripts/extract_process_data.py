@@ -1,5 +1,6 @@
 import subprocess
 import platform
+import pandas as pd 
 
 
 class Extract:
@@ -17,3 +18,6 @@ class Extract:
 
         else:
             return "Os Not Supported"
+
+    def open_csv(self, file_name_csv):
+        return pd.read_csv(file_name_csv)
