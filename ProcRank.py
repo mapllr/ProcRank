@@ -15,10 +15,10 @@ class Main:
         self.file_name_csv = self.save.save_csv(self.raw_data)
         self.df = self.extract.open_csv(self.file_name_csv)
 
-        self.mem, self.comm = self.convert.nparr(self.df["%MEM"], self.df["COMMAND"])
+        self.mem, self.comm = self.convert.nparr_sort(self.df["%MEM"], self.df["COMMAND"])
 
     def main(self):
-        pass
+        self.plot.make_barh(self.comm, self.mem)
 
 
 if __name__ == "__main__":
