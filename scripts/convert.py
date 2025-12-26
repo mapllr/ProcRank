@@ -12,5 +12,5 @@ class Convert:
         pair = list(zip(x,y))
         pair_sorted = sorted(pair, key=lambda p: p[0])
         xs, ys = zip(*pair_sorted)
-        return np.array(xs[-10:]),np.array(ys[-10:])
+        return np.array(xs), np.array(ys)
 

@@ -1,7 +1,7 @@
-from scripts.extract_process_data import Extract
-from scripts.save_process_data import Save
-from scripts.convert_set_data import Convert
-from scripts.make_plot import Plot
+from scripts.extract import Extract
+from scripts.save import Save
+from scripts.convert import Convert
+from scripts.chart import Chart
 
 
 class Main:
@@ -9,7 +9,7 @@ class Main:
         self.extract  = Extract()
         self.save     = Save()
         self.convert  = Convert()
-        self.plot    = Plot()
+        self.chart    = Chart()
 
         self.raw_data = self.extract.get_raw_data()
         self.file_name_csv = self.save.save_csv(self.raw_data)
@@ -18,8 +18,7 @@ class Main:
         self.mem, self.comm = self.convert.nparr_sort(self.df["%MEM"], self.df["COMMAND"])
 
     def main(self):
-        self.plot.make_barh(self.comm, self.mem)
-
+        self.chart.bar(self.comm[-20:], self.mem[-20:])
 
 if __name__ == "__main__":
     Main().main()
