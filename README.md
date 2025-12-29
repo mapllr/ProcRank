@@ -8,18 +8,19 @@ numpy array and then diplay it on matplotlib bar.
 
 ## Tree Structure
 
+```text
 .
-├── garbage\n
-├── LICENSE\n
-├── ProcRank.py\n
-├── scripts\n
-│   ├── chart.py\n
-│   ├── convert.py\n
-│   ├── extract.py\n
-│   └── save.py\n
-└── utils\n
-    └── clear.sh\n
-
+├── garbage
+├── LICENSE
+├── ProcRank.py
+├── scripts
+│   ├── chart.py
+│   ├── convert.py
+│   ├── extract.py
+│   └── save.py
+└── utils
+    └── clear.sh
+```
 
 ## Installation
 
