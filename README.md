@@ -5,21 +5,21 @@ This is a simple python project that collects memory usage data by commands and 
 It uses linux command "ps" to get data from system, then stores it as a csv and read it using pandas then it will put it into an
 numpy array and then diplay it on matplotlib bar.
 
----
 
 ## Tree Structure
 
 .
-├── garbage
-├── LICENSE
-├── ProcRank.py
-├── scripts
-│   ├── chart.py
-│   ├── convert.py
-│   ├── extract.py
-│   └── save.py
-└── utils
-    └── clear.sh
+├── garbage\n
+├── LICENSE\n
+├── ProcRank.py\n
+├── scripts\n
+│   ├── chart.py\n
+│   ├── convert.py\n
+│   ├── extract.py\n
+│   └── save.py\n
+└── utils\n
+    └── clear.sh\n
+
 
 ## Installation
 
