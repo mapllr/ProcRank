@@ -1,6 +1,6 @@
+import pandas as pd 
 import subprocess
 import platform
-import pandas as pd 
 
 
 class Extract:
